@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient(#af67e9, #6565e7);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1d1e35;
+}
+
+hr {
+  color: #e7e7e9;
+  opacity: 30%;
+}
+
+.main-container {
+  background-color: #e7e7e9;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 550px;
+  width: 1000px;
+}
+
+.container-left {
+  position: absolute;
+  height: 550px;
+  width: 500px;
+}
+
+.box-img {
+  position: absolute;
+  margin-top: 425px;
+  margin-left: 325px;
+  z-index: 2;
+}
+
+.woman-img {
+  position: absolute;
+  margin-top: 275px;
+  margin-left: 400px;
+  z-index: 1;
+}
+
+.container-right {
+  display: inline-block;
+  height: 550px;
+  width: 400px;
+  padding: 20px;
+  margin-left: 500px;
+  color: #4a4b5e;
+}
+
+.btn {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #4a4b5e;
+}
+
+.dropdown.active > .btn {
+  color: #1d1e35;
+}
+
+.btn:hover {
+  color: #f47c57;
+}
+
+.flip {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.dropdown {
+  position: relative;
+  height: 75px;
+  width: 400px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  background-color: #e7e7e9;
+  box-sizing: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .btn + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.attribution {
+  position: absolute;
+  margin-top: 750px;
+  margin-left: 800px;
+}
